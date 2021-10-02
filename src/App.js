@@ -5,6 +5,7 @@ import NavBar from './component/navBar';
 import Customers from "./component/customers";
 import Rentals from './component/rentals';
 import NotFound from './component/notFound';
+import LoginForm from './component/login';
 import {Route, Redirect, Switch} from "react-router-dom";
 import MovieForm from './component/movieForm';
 import { importRoute } from 'react-router-dom';
@@ -17,6 +18,7 @@ function App() {
       <NavBar /><main className="container">
       <Switch>
         <Route path="/movies" component={Movies}></Route>
+        <Route path="/login" component={LoginForm}></Route>
         <Route path="/customer" component={Customers}></Route>
         <Route path="/rentals" component={Rentals}></Route>
         <Route path="/not-found" component={NotFound}></Route>
